@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#menu {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#menu a {
+    color: white;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.image-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}

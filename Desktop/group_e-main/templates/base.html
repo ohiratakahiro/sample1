@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav id="menu">
+    <div class="container">
+      <ul>
+        <li><a href="{% url 'uploader:image_list' %}">画像一覧</a></li>
+        <li><a href="{% url 'uploader:image_create' %}">画像作成</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
